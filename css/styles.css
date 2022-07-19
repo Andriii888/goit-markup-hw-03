@@ -72,7 +72,7 @@ margin: 0 auto;
     display: flex;
     align-items: center;
     height: 80px;
-    border-bottom: 5px solid #ECECEC;
+    border-bottom: 1px solid #ECECEC;
 }
 .header-navigation{
     display: flex;
