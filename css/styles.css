@@ -20,21 +20,31 @@ ul,ol{
     padding-left: 0;
         margin-top: 0;
             margin-bottom: 0;
+                list-style: none;
+/* .list{
+    padding-left: 0;
+    margin: 0;
+} */
+
 }
 img{
     display: block;
+    max-width: 100%;
+    height: auto;
+}
+.section{
+    padding-bottom: 94px;
+    padding-top: 94px;
+}
+.link{
+    text-decoration: none;
 }
 .container{
     margin-left: auto;
     margin-right: auto;
-    width: 1600px;
+    width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
-}
-.page-header-container{
-    display: flex;
-    align-items: center;
-    height: 80px;
 }
 body{
 font-family: 'Roboto',
@@ -53,22 +63,32 @@ a {
 button {
     cursor:pointer;
     font-family:var(--font-family-primary) ;
+border: none;
+display: block;
+margin: 0 auto;
+
+}
+.page-header-container {
+    display: flex;
+    align-items: center;
+    height: 80px;
+    border-bottom: 1px solid #ECECEC;
 }
 .header-navigation{
     display: flex;
 align-items: center;
 
 }
-.header-navigation:first-child {
+/* .header-navigation:first-child {
     margin-left: 215px;
     margin-top: 25px;
     margin-bottom: 25px;
-}
+} */
 .navigation-links{
     display: flex;
     margin-left: 93px;
-    margin-top: 32px;
-    margin-bottom: 32px;
+    /* margin-top: 32px;
+    margin-bottom: 32px; */
     gap:50px
 }
 .header-contacts{
@@ -77,7 +97,7 @@ align-items: center;
         margin-top: 32px;
         margin-left: auto;
         gap: 50px;
-        padding-right: 215px;
+        /* padding-right: 215px; */
 }
 
 
@@ -86,13 +106,14 @@ align-items: center;
     margin-right: 50px;
 }
 .header-navigation,
-.header-contacts{
+.header-contacts {
+    /* .links-header{ */
     background: var(--color-white,white);
     color: var(--primary-text-colorry,black);
     font-style: normal;
         font-weight: 500;
         font-size: 14px;
-        line-height: 1.143;
+        line-height: 1.14;
         letter-spacing: 0.02em;
 }
 .navigation-links a:hover,
@@ -106,7 +127,7 @@ align-items: center;
     font-style: normal;
         font-weight: 500;
         font-size: 14px;
-        line-height: 1.143;
+        line-height: 1.14;
         letter-spacing: 0.02em;
     
         color:var(--text-color,silver);
@@ -147,15 +168,16 @@ align-items: center;
 /* герой */
 .hero{
             background: var(--bgcolor-black,black);
+            padding: 200px 0;
 
-            display: block;
+            /* display: block;
             height: 600px;
-            width: 1600px;
+            width: 1200px;
             margin-right: auto;
             margin-left: auto;
             padding-left: 15px;
             padding-right: 15px;
-            text-align: center;
+            text-align: center; */
 }
 /* .hero-img-button{
     display: flex;
@@ -175,7 +197,7 @@ align-items: center;
 
         display: block;
         padding-top: 200px;
-        padding-bottom: 40px;
+        margin-bottom: 30px;
         margin-left: auto;
         margin-right: auto;
 
@@ -185,7 +207,7 @@ align-items: center;
 }
 
 .button-hero{
-    font-style: normal;
+    /* font-style: normal; */
         font-weight: 700;
         font-size: 16px;
         line-height: 1.875;
@@ -193,24 +215,25 @@ align-items: center;
         letter-spacing: 0.06em;    
         color:var(--color-white,white);
         background: var(--accent-text-color,blue);
+
         padding-top: 10px;
         padding-bottom:10px;
         padding-left: 32px;
         padding-right: 32px;
+        border: none;
 
         display:block;
-        width: 216px;
-        height: 50px;
+        min-width: 200px;
+        /* height: 50px; */
         border-radius: 4px;
         margin-left: auto;
         margin-right: auto;
         
 }
-/* .button-center{
-    display: flex;
-    justify-content: center;
-} */
 /* переваги */
+        /* .advantage{
+    margin-top: 94px;
+        } */
     .advantage h3{
         font-style: normal;
             font-weight: 700;
@@ -231,10 +254,14 @@ align-items: center;
     .our-advantage{
         display:flex;
         justify-content: center;
+        gap: 30px;
         padding-top: 94px;
-        padding-bottom: 94px;
+        /* padding-bottom: 94px; */
 
     }
+                .our-advantage h3{
+                    margin-bottom: 10px;
+                }
     .items-advantage{
         width: 270px;
         text-align:start;
@@ -245,8 +272,7 @@ display: flex;
 flex-wrap: wrap;
 gap: 30px;
 justify-content: center;
-padding-bottom: 94px;
-    }
+   }
     .work-title{
         font-style: normal;
             font-weight: 700;
@@ -254,13 +280,14 @@ padding-bottom: 94px;
             line-height: 1.17;
             text-align: center;
             letter-spacing: 0.03em;
-            padding-bottom: 50px;
+            margin-bottom: 50px;
         
             color:var(--primary-text-colorry,black);
     }
     .advantage,
     .work{
-        background-color:var(--background-color) ;
+        /* background-color:var(--background-color) ; */
+        padding-top: 0px;
     }
     /* команда */
     .team{
@@ -276,11 +303,14 @@ padding-bottom: 94px;
             letter-spacing: 0.03em;
                         color:var(--primary-text-,black);
 
-            padding-top: 94px;
-            padding-bottom: 50px;
+            /* padding-top: 94px; */
+            margin-bottom: 50px;
             margin-left: auto;
             margin-right: auto;
         
+    }
+    .info-team{
+        padding: 30px 0px;
     }
     .our-team h3{
         font-style: normal;
@@ -288,8 +318,8 @@ padding-bottom: 94px;
             font-size: 16px;
             line-height: 1.19;
             letter-spacing: 0.03em;
-            padding-bottom: 10px;
-            padding-top: 30px;
+            /* padding-bottom: 10px;
+            padding-top: 30px; */
         
             color:var(--primary-text-colorry,black);
     }
@@ -311,17 +341,21 @@ padding-bottom: 94px;
         /* height: 648px; */
     }
     .our-team li{
-        height: 368px;
+        /* height: 368px; */
+        background-color: #fff;
                     border-radius: 0px 0px 4px 4px;
                     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     }
     /* footer */
     .footer-links{
         margin-left: 215px;
-        margin-top: 60px;
+        /* margin-top: 60px; */
     }
-        .links-address{
-            padding-top: 20px;
+        .links-address:first-child{
+            margin-top: 20px;
+        }
+        .links-address li:not(:last-child){
+        margin-bottom: 9px;
         }
 .links-address a{
     font-style: normal;
@@ -347,22 +381,23 @@ color: var(--accent-text-color);
 .portfolio-menu{
     display: flex;
     justify-content: center;
-    gap:52px;
-    padding-top:100px;
+    gap:8px;
+    /* padding-top:100px; */
+    margin-bottom: 50px;
 }
 .img-portfolio{
     display: flex;
     flex-wrap: wrap;
     gap:30px;
-    margin-left: 215px;
-    padding-top: 50px;
+    /* margin-left: 215px;
+    padding-top: 50px; */
 }
 .img-portfolio li{
     width:370px;
-    height:404px;
-    border: 1px solid #EEEEEE;
+    /* height:404px; */
 
 }
+
 .galery-portfolio button{
     font-family: 'Roboto',
             sans-serif;
@@ -374,14 +409,27 @@ color: var(--accent-text-color);
         color:var(--primary-text-colorry,black);
         background-color: var(--background-color-team);
         border-radius: 4px;
-        width: 112px;
-        height: 38px;
+        /* width: 112px;
+        height: 38px; */
         border: var(--primary-text-colorry);
+
+        padding: 6px 22px;
+            border: none;
+        
+            display: block;
+            min-width: 70px;
+            border-radius: 4px;
+            margin-left: auto;
+            margin-right: auto;
 }
 button:hover,
 button:focus{
 background-color:var(--accent-text-color,blue);
 color:var(--color-white) ;
+}
+.info-portfolio{
+        border: 1px solid #EEEEEE;
+padding:20px 24px;
 }
 
 .galery-portfolio h2{
@@ -401,9 +449,7 @@ color:var(--color-white) ;
         font-size: 16px;
         line-height: 1.875;
         letter-spacing: 0.03em;
-                margin-left: 24px;
                     margin-top:4px;
-                    margin-bottom: 20px;
     
         color:var(--text-color,silver);
 }
